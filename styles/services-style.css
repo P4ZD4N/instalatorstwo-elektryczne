@@ -13,17 +13,18 @@
   gap: 50px;
   width: 80%;
 }
-.services .section-header {
+.services .services-header {
+  width: 80%;
   text-align: center;
   margin-bottom: 3rem;
 }
-.services .section-header h2 {
+.services .services-header h2 {
   font-size: 2rem;
   color: var(--text-primary);
   position: relative;
   padding-bottom: 15px;
 }
-.services .section-header h2::after {
+.services .services-header h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -33,7 +34,7 @@
   height: 4px;
   background-color: var(--accent-color);
 }
-.services .section-header p {
+.services .services-header p {
   color: var(--text-secondary);
 }
 .services .service-card {
@@ -62,4 +63,31 @@
 }
 .services .service-card p {
   color: var(--text-secondary);
+}
+@media (max-width: 1080px) {
+  .services .services-cards-wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 950px) {
+  .services .service-card {
+    width: 80%;
+    padding: 2rem 5rem 2rem 5rem;
+  }
+}
+@media (max-width: 560px) {
+  .services .service-card {
+    padding: 2rem 3rem 2rem 3rem;
+  }
+}
+@media (max-width: 470px) {
+  .services .service-card {
+    height: 350px;
+    padding: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  .services .service-card {
+    height: 380px;
+  }
 }/*# sourceMappingURL=services-style.css.map */
