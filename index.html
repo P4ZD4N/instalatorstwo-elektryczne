@@ -4,16 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Instalatorstwo Elektryczne Marcin Chudy - Usługi Elektryczne</title>
-        <link rel="icon" href="assets/images/logo.png" type="image/png">
-        <link rel="stylesheet" href="styles/style.css" />
-        <link rel="stylesheet" href="styles/navbar-style.css" />
-        <link rel="stylesheet" href="styles/hero-style.css" />
-        <link rel="stylesheet" href="styles/about-us-style.css" />
-        <link rel="stylesheet" href="styles/services-style.css" />
-        <link rel="stylesheet" href="styles/why-us-style.css" />
+        <link rel="icon" href="assets/images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="styles/common/style.css" />
+        <link rel="stylesheet" href="styles/navbar/navbar-style.css" />
+        <link rel="stylesheet" href="styles/hero/hero-style.css" />
+        <link rel="stylesheet" href="styles/about-us/about-us-style.css" />
+        <link rel="stylesheet" href="styles/services/services-style.css" />
+        <link rel="stylesheet" href="styles/why-us/why-us-style.css" />
+        <link rel="stylesheet" href="styles/projects/projects-style.css" />
+        <link rel="stylesheet" href="styles/project-overlay/project-overlay-style.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+        <script src="scripts/show-first-project-details.js"></script>
+        <script src="scripts/show-second-project-details.js"></script>
+        <script src="scripts/show-third-project-details.js"></script>
+        <script src="scripts/show-gallery.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -52,7 +58,7 @@
                         </li>
             
                         <li class="nav-item">
-                            <a class="nav-link">Realizacje</a>
+                            <a class="nav-link" href="#projects">Realizacje</a>
                         </li>
             
                         <li class="nav-item">
@@ -179,10 +185,70 @@
                     </div>
                 </div>
             </section>
+
+            <section id="projects" class="projects">
+                <div class="projects-header">
+                    <h2>Nasze realizacje</h2>
+                    <p>Przykłady naszych ostatnich realizacji</p>
+                </div>
+
+                <div class="projects-wrapper">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img class="project-img-1" src="assets/images/dom1.jpg" alt="Instalacja elektryczna w domu jednorodzinnym">
+                        </div>
+                        <div class="project-info">
+                            <h3>Instalacja elektryczna w domu jednorodzinnym</h3>
+                            <p>Kompleksowa instalacja elektryczna w nowym domu jednorodzinnym, wraz z montażem okablowania pod instalacje telewizji oraz monitoringu.</p>
+                            <button onclick="showFirstProjectDetails()">Galeria</button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img class="project-img-2" src="assets/images/vivapol2.jpg" alt="Instalacja fotowoltaiczna">
+                        </div>
+                        <div class="project-info">
+                            <h3>Instalacja fotowoltaiczna 20kW na sklepie</h3>
+                            <p>Projekt i montaż instalacji fotowoltaicznej o mocy 20kW dla klienta biznesowego z Blachowni (Vivapol). System dostosowany do lokalnych warunków nasłonecznienia.</p>
+                            <button onclick="showSecondProjectDetails()">Galeria</button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img class="project-img-3" src="assets/images/blok3.jpeg" alt="Modernizacja">
+                        </div>
+                        <div class="project-info">
+                            <h3>Modernizacja zasilania wentylacji na terenie bloku</h3>
+                            <p>Kompleksowa modernizacja zasilania wentylacji na terenie bloku mieszkalnego w Częstochowie. Zakres robót obejmował prace prowadzone na dachu obiektu.</p>
+                            <button onclick="showThirdProjectDetails()">Galeria</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         
         <footer>
 
         </footer>
+
+        <div id="project-overlay" class="project-overlay">
+            <div class="project-overlay-content">
+                <div class="project-details">
+                    <button id="close-btn" onclick="closeImage()">X</button>
+                </div>
+
+                <h2 id="project-title">Tytuł projektu</h2>
+
+                <div class="project-gallery">
+                    <button class="nav-btn left" onclick="prevImage()">&#10094;</button>
+                
+                    <div class="project-image-wrapper">
+                        <img id="project-overlay-image" src="" alt="Zdjęcie projektu">
+                    </div>
+                
+                    <button class="nav-btn right" onclick="nextImage()">&#10095;</button>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
