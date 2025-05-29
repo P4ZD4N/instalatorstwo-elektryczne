@@ -1,4 +1,5 @@
 .hero {
+  margin-top: 100px;
   background-image: url("../../assets/images/hero.jpeg");
   background-size: cover;
   height: 80vh;

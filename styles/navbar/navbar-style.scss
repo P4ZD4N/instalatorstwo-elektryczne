@@ -1,11 +1,20 @@
-.navbar {
-    background-color: #000000 !important;
+.navbar.navbar-dark {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     transition: padding 0.3s ease, background-color 0.3s ease;
     padding: 1rem 0;
+    background-color: rgba(15, 15, 15, 1) !important;
+    
+    img {
+        width: 50px;
+        transition: width 0.3s ease; 
+    }
+
+    .nav-social-group {
+        display: flex;
+    }
 }
 
 .navbar-brand {
@@ -26,7 +35,7 @@
     }
 
     .bottom {
-        color: orange;
+        color: #ff914d;
         font-size: 28px; 
         font-weight: 700;
 
@@ -44,9 +53,12 @@
     }
 }
 
-.navbar.shrink {
-    padding: 0;
+.navbar.scrolled {
     background-color: rgba(0, 0, 0, 0.8) !important;
+
+    img {
+        width: 40px;
+    }
 }
 
 .navbar-toggler {
@@ -93,7 +105,7 @@
     position: absolute;
     height: 3px;
     width: 100%;
-    background: orange;
+    background: #ff914d;
     border-radius: 1px;
     opacity: 1;
     left: 0;
@@ -116,14 +128,6 @@
     .bottom-bar {
         margin-top: 20px;
         transform: rotate(0deg);
-    }
-}
-
-.btn-danger {
-    background-color: #ff0000;
-
-    &:hover {
-        background-color: #b90909;
     }
 }
 
@@ -159,13 +163,13 @@
         transform-origin: center;
         width: 100%;
         height: 2px;
-        background-color: orange;
+        background-color: #ff914d;
         transition: transform 0.4s ease;
     }
 
     &:hover {
         cursor: pointer;
-        color: orange !important;
+        color: #ff914d !important;
 
         &::after {
             transform: translateX(-50%) scaleX(1);
@@ -173,7 +177,7 @@
     }
 
     &.active {
-        color: orange;
+        color: #ff914d;
 
         &::after {
             transform: translateX(-50%) scaleX(1);
