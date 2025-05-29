@@ -1,6 +1,8 @@
 # Instalatorstwo Elektryczne Marcin Chudy
 
-![](./assets/images/logo-png.png)
+<p align="center">
+  <img src="./assets/images/logo-png.png" alt="Logo" />
+</p>
 
 ## 👀 About
 
