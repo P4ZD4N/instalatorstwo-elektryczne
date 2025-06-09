@@ -17,3 +17,4 @@ Lightweight website designed and developed for the client from electrical indust
 - Eye-catching, well-tailored and well-thought user interface.
 - Responsive Web Design to improve accessibility of page at all types of devices.
 - Photo galleries to show recent projects clearly.
+- Integration with Google Analytics for tracking website traffic in easy way.
