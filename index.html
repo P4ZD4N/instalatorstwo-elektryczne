@@ -25,6 +25,7 @@
         <script src="scripts/show-gallery.js"></script>
         <script src="scripts/navbar-color-change.js"></script>
         <script src="scripts/animated-element.js" defer></script>
+        <script src="scripts/hiding-sensitive-data.js"></script>
         <script src="https://kit.fontawesome.com/f2b1b3d7ed.js" crossorigin="anonymous"></script>
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1E5NC3SSG4"></script>
@@ -265,7 +266,7 @@
                         <div class="contact-icon">📱</div>
                         <div>
                             <h3>Telefon</h3>
-                            <p>+48 692 643 744</p>
+                            <p class="click-to-reveal" onclick="revealPhone(this)">Kliknij, aby pokazać numer</p>
                         </div>
                     </div>
                     
@@ -273,7 +274,7 @@
                         <div class="contact-icon">✉️</div>
                         <div>
                             <h3>Email</h3>
-                            <p>instalacjeelektryczne79@gmail.com</p>
+                            <p class="click-to-reveal" onclick="revealEmail(this)">Kliknij, aby pokazać email</p>
                         </div>
                     </div>
 
