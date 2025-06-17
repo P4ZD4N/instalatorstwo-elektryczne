@@ -49,13 +49,13 @@
   box-shadow: var(--card-shadow);
   background-color: var(--card-bg);
 }
-@media (max-width: 1500px) {
+@media (max-width: 1580px) {
   .projects .project-card {
     width: 400px;
     height: 600px;
   }
 }
-@media (max-width: 1350px) {
+@media (max-width: 1290px) {
   .projects .project-card {
     height: 650px;
   }
