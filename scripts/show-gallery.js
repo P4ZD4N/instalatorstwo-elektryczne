@@ -33,3 +33,18 @@ function closeImage() {
     overlay.classList.remove('fade-out');
   }, 300);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const overlay = document.getElementById('project-overlay');
+  const overlayContent = document.querySelector('.project-overlay-content');
+  
+  overlay.addEventListener('click', function(e) {
+    if (!overlayContent.contains(e.target)) {
+      closeImage();
+    }
+  });
+  
+  overlayContent.addEventListener('click', function(e) {
+    e.stopPropagation();
+  });
+});
