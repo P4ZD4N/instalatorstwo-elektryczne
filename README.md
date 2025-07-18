@@ -11,6 +11,7 @@ Lightweight website designed and developed for the client from electrical indust
 ## 🔧 Tech Stack
 
 **Frontend:** HTML, SCSS, JavaScript, Bootstrap
+**Integrations:** Google Analytics
 
 ## 💡 Features
 
@@ -19,3 +20,30 @@ Lightweight website designed and developed for the client from electrical indust
 - Photo galleries to show recent projects clearly.
 - Integration with Google Analytics for tracking website traffic in easy way.
 - Anti-spam contact information (phone and email) protection.
+
+## ▶️ Run
+
+Clone the repository
+
+```bash
+git clone git@github.com:P4ZD4N/instalatorstwo-elektryczne.git
+```
+
+Navigate to the project directory
+
+```bash
+cd /path/to/instalatorstwo-elektryczne
+```
+
+Double click on index.html
+
+## 📺 Demo
+
+![](./demo/1.png)
+![](./demo/2.png)
+![](./demo/3.png)
+![](./demo/4.png)
+![](./demo/5.png)
+![](./demo/6.png)
+![](./demo/7.png)
+![](./demo/1.gif)
