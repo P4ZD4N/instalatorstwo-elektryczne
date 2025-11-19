@@ -11,6 +11,7 @@ Lightweight website designed and developed for the client from electrical indust
 ## 🔧 Tech Stack
 
 **Frontend:** HTML, SCSS, JavaScript, Bootstrap
+
 **Integrations:** Google Analytics
 
 ## 💡 Features
