@@ -37,13 +37,3 @@ cd /path/to/instalatorstwo-elektryczne
 
 Double click on index.html
 
-## 📺 Demo
-
-![](./demo/1.png)
-![](./demo/2.png)
-![](./demo/3.png)
-![](./demo/4.png)
-![](./demo/5.png)
-![](./demo/6.png)
-![](./demo/7.png)
-![](./demo/1.gif)
