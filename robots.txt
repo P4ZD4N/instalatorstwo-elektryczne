@@ -1,5 +1,3 @@
 User-agent: *
-Disallow: /scripts/
-Disallow: /styles/
-Disallow: /assets/
 Allow: /
+Sitemap: https://marcinchudy.com/sitemap.xml
