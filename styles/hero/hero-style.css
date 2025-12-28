@@ -1,6 +1,6 @@
 .hero {
   margin-top: 100px;
-  background-image: url("../../assets/images/hero.jpeg");
+  background-image: url("../../assets/images/hero.webp");
   background-size: cover;
   height: 80vh;
   display: flex;
