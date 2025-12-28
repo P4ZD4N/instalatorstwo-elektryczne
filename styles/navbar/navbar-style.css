@@ -11,8 +11,10 @@
   width: 50px;
   transition: width 0.3s ease;
 }
-.navbar.navbar-dark .nav-social-group {
+
+.navbar-collapse .nav-social-group {
   display: flex;
+  gap: 0.5em;
 }
 
 .navbar-brand {
@@ -60,7 +62,7 @@
 }
 
 .navbar-toggler {
-  width: 20 px;
+  width: 20px;
   height: 20px;
   position: relative;
   transition: 0.5s ease-in-out;
@@ -122,7 +124,7 @@
 }
 
 .navbar-nav {
-  flex-direction: row;
+  display: flex;
   gap: 1rem;
 }
 .navbar-nav.mx-auto {
@@ -177,6 +179,10 @@
   }
   .navbar-nav.mx-auto {
     gap: 0;
+  }
+  .navbar-collapse .nav-social-group {
+    flex-direction: row;
+    justify-content: center;
   }
   .nav-link {
     text-align: center;
